@@ -20,6 +20,8 @@ def train_model_and_backtest_regressor(df, x_vars, y_var,
         ignore_last_x_training_items=0,
         **kwargs):
 
+    logger = logging.getLogger(__name__)
+
     dates = sorted(df[col_date])
     if backtest_start is None:
         backtest_start = pd.to_datetime(dates[1])
@@ -39,12 +41,12 @@ def train_model_and_backtest_regressor(df, x_vars, y_var,
     periods = periods.insert(periods.shape[-1], backtest_end)
     periods = periods.drop_duplicates()
 
-    logging.debug('%d periods to backtest: %s.', len(periods), list(map(str, periods.date)))
+    logger.debug('%d periods to backtest: %s.', len(periods), list(map(str, periods.date)))
     pass
 
     backtest_trans_list = []
     for period_start, period_end in sliding_window(2, periods):
-        logging.info('Training a model to be tested between %s and %s.', period_start.date(), period_end.date())
+        logger.info('Training a model to be tested between %s and %s.', period_start.date(), period_end.date())
 
         # get the training dataset
         df_train = get_trailing_df(
@@ -58,7 +60,7 @@ def train_model_and_backtest_regressor(df, x_vars, y_var,
             train_index = df_train[col_date].sort_values().index[:-ignore_last_x_training_items]
             df_train = df_train.loc[train_index]
 
-        logging.info('Training dataset is between %s and %s.',
+        logger.info('Training dataset is between %s and %s.',
                      df_train.date.min().date(), df_train.date.max().date())
         # Get the testing dataset
         if period_end == periods[-1]:

@@ -1,8 +1,8 @@
 ---
 title: "Introduction"
 date: 2019-05-05T17:43:30-03:00
-draft: true
-weight: 10
+draft: false
+weight: 110
 ---
 
 [Jupyter notebook](https://nbviewer.jupyter.org/github/gmoncarz/machine_learning_tour/blob/master/notebooks/02_linear_regression_part_01__introduction.ipynb)

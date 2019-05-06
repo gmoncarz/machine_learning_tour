@@ -1,8 +1,8 @@
 ---
 title: "Avoiding look ahead bias"
 date: 2019-05-06T11:11:36-03:00
-draft: true
-weight: 30
+draft: false
+weight: 120
 ---
 [Jupyter notebook](https://nbviewer.jupyter.org/github/gmoncarz/machine_learning_tour/blob/master/notebooks/02_linear_regression_part_03__no_look_ahead_bias.ipynb)
 

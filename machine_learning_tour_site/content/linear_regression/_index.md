@@ -1,8 +1,8 @@
 ---
 title: "Linear Regression"
 date: 2019-05-05T17:43:05-03:00
-draft: true
-weight: 20
+draft: false
+weight: 100
 ---
 [Linear Regression](https://en.wikipedia.org/wiki/Linear_regression) is one of the first and most simple machine learning model. 
 The Least Squares linear regression was in fact developed by 

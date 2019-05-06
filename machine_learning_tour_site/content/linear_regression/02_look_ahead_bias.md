@@ -1,8 +1,8 @@
 ---
 title: "Look Ahead Bias"
 date: 2019-05-06T10:44:05-03:00
-draft: true
-weight: 20
+draft: false
+weight: 115
 ---
 
 [Jupyter notebook](https://nbviewer.jupyter.org/github/gmoncarz/machine_learning_tour/blob/master/notebooks/02_linear_regression_part_02__look_ahead_bias.ipynb)

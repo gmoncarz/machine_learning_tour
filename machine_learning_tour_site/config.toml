@@ -49,3 +49,9 @@ enableMissingTranslationPlaceholders = false
     name = "LinkedIn"
     url = "https://www.linkedin.com/in/gabriel-moncarz-736a202/"
     weight = 2
+
+[[menu.main]]
+    name = "Mail"
+    url = "mailto:gabriel.moncarz@gmail.com"
+    weight = 3
+

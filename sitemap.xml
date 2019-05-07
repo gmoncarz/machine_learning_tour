@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/data_preparation/</loc>
+    <lastmod>2019-05-05T17:41:30-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/linear_regression/</loc>
+    <lastmod>2019-05-05T17:43:05-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/linear_regression/01_introduction/</loc>
+    <lastmod>2019-05-05T17:43:30-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/linear_regression/02_look_ahead_bias/</loc>
+    <lastmod>2019-05-06T10:44:05-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/linear_regression/03_no_look_ahead_bias/</loc>
+    <lastmod>2019-05-06T11:11:36-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/linear_regression/04/</loc>
+    <lastmod>2019-05-06T11:11:36-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/linear_regression/05_adding_historical_variables/</loc>
+    <lastmod>2019-05-06T11:11:36-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/linear_regression/06_regularization/</loc>
+    <lastmod>2019-05-06T11:11:36-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/more_models/</loc>
+    <lastmod>2019-05-05T17:41:30-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/</loc>
+    <lastmod>2019-05-05T16:52:58-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linear Regression on Machine Learning Tour by Gabriel Moncarz</title>
+    <link>https://gmoncarz.github.io/machine_learning_tour/linear_regression/</link>
+    <description>Recent content in Linear Regression on Machine Learning Tour by Gabriel Moncarz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 May 2019 17:43:05 -0300</lastBuildDate>
+    
+	<atom:link href="https://gmoncarz.github.io/machine_learning_tour/linear_regression/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/linear_regression/01_introduction/</link>
+      <pubDate>Sun, 05 May 2019 17:43:30 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/linear_regression/01_introduction/</guid>
+      <description>Jupyter notebook
+   Explanation of the backtesting performance metrics:
+ Alpha: excess return on an investment relative to the return on a benchmark index Beta: Unlike alpha, which measures relative return, beta is the measure of relative volatility CAGR: Compound annual growth rate. It is one of the most important performance comparison, because it allows to compare backtests with different periods. Max Drawdown: maximum loss from the highest peak.</description>
+    </item>
+    
+    <item>
+      <title>Look Ahead Bias</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/linear_regression/02_look_ahead_bias/</link>
+      <pubDate>Mon, 06 May 2019 10:44:05 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/linear_regression/02_look_ahead_bias/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>Avoiding look ahead bias</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/linear_regression/03_no_look_ahead_bias/</link>
+      <pubDate>Mon, 06 May 2019 11:11:36 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/linear_regression/03_no_look_ahead_bias/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>Running regression models</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/linear_regression/04/</link>
+      <pubDate>Mon, 06 May 2019 11:11:36 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/linear_regression/04/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>Adding historical variables</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/linear_regression/05_adding_historical_variables/</link>
+      <pubDate>Mon, 06 May 2019 11:11:36 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/linear_regression/05_adding_historical_variables/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>Ridge, Lasso and ElasticNet</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/linear_regression/06_regularization/</link>
+      <pubDate>Mon, 06 May 2019 11:11:36 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/linear_regression/06_regularization/</guid>
+      <description>Reference lectures:
+ Ridge Lasso ElasticNet  Jupyter notebook
+   </description>
+    </item>
+    
+  </channel>
+</rss>

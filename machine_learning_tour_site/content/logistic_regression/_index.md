@@ -1,5 +1,5 @@
 ---
-title: "Linear Regression"
+title: "Logistic Regression"
 date: 2019-05-05T17:43:05-03:00
 draft: false
 weight: 200

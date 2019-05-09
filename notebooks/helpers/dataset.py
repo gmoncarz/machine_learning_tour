@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 
 def read_quote_dataset(filename):
@@ -12,7 +13,8 @@ def read_quote_dataset(filename):
 
 def preprocess_quotes(df, vars_to_shift=['close_adj'], shift_periods=[1],
                       vars_for_return = ['close_adj'], return_periods = [1],
-                      shift_date=False, col_date='date'):
+                      shift_date=False, col_date='date',
+                      with_ret_sign=False):
     df_shift = pd.concat(
         (
             df[vars_to_shift].shift(-shift_period).rename(
@@ -47,6 +49,13 @@ def preprocess_quotes(df, vars_to_shift=['close_adj'], shift_periods=[1],
         for return_period in return_periods),
     axis=1,
     )
-    df = pd.concat([df, df_ret], axis=1)
+
+    if with_ret_sign:
+        df_ret_sign = np.sign(df_ret)
+        df_ret_sign.columns = map(lambda name: name + '_sign', df_ret_sign.columns)
+    else:
+        df_ret_sign = pd.DataFrame()
+
+    df = pd.concat([df, df_ret, df_ret_sign], axis=1)
 
     return df

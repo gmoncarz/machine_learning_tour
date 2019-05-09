@@ -73,5 +73,15 @@
    </description>
     </item>
     
+    <item>
+      <title>Introduction</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/logistic_regression/01_introduction/</link>
+      <pubDate>Sun, 05 May 2019 17:43:30 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/logistic_regression/01_introduction/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
   </channel>
 </rss>

@@ -39,7 +39,8 @@ def plot_ohlc_ts(df, x_is_index=True, x_col=None,
 
 
 def plot_return(dates, series, labels=None, accumulate=False,
-                scater_params={'opacity': .7}, title=None):
+                scater_params={'opacity': .7}, title=None,
+                x_axis_title=None, y_axis_title='Return'):
     init_notebook_mode()
 
     if accumulate:
@@ -66,6 +67,12 @@ def plot_return(dates, series, labels=None, accumulate=False,
     layout = {}
     if title:
         layout['title'] = title
+    if x_axis_title:
+        layout['xaxis'] = {'title': x_axis_title}
+    if y_axis_title:
+        if accumulate and y_axis_title == 'Return':
+            y_axis_title = 'Return Accumulated'
+        layout['yaxis'] = {'title': y_axis_title}
 
     fig = dict(data=data, layout=layout)
     iplot(fig)

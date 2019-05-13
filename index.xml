@@ -83,5 +83,65 @@
    </description>
     </item>
     
+    <item>
+      <title>Running logistic models</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/logistic_regression/02_logisitic_models/</link>
+      <pubDate>Sun, 12 May 2019 22:30:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/logistic_regression/02_logisitic_models/</guid>
+      <description>Jupyter notebook
+  </description>
+    </item>
+    
+    <item>
+      <title>Adding historical variables</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/logistic_regression/03_adding_historical_variables/</link>
+      <pubDate>Sun, 12 May 2019 22:59:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/logistic_regression/03_adding_historical_variables/</guid>
+      <description>Jupyter notebook
+  </description>
+    </item>
+    
+    <item>
+      <title>Logistic training parameters part I</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/logistic_regression/04_logistic_params_part_1/</link>
+      <pubDate>Sun, 12 May 2019 23:04:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/logistic_regression/04_logistic_params_part_1/</guid>
+      <description>Jupyter notebook
+  </description>
+    </item>
+    
+    <item>
+      <title>Logistic training parameters part II</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/logistic_regression/04_logistic_params_part_2/</link>
+      <pubDate>Sun, 12 May 2019 23:04:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/logistic_regression/04_logistic_params_part_2/</guid>
+      <description>Jupyter notebook
+  </description>
+    </item>
+    
+    <item>
+      <title>Logistic training parameters part III</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/logistic_regression/04_logistic_params_part_3/</link>
+      <pubDate>Sun, 12 May 2019 23:04:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/logistic_regression/04_logistic_params_part_3/</guid>
+      <description>Jupyter notebook
+  </description>
+    </item>
+    
+    <item>
+      <title>Strategy parameters</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/logistic_regression/05_strategy_params/</link>
+      <pubDate>Sun, 12 May 2019 23:10:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/logistic_regression/05_strategy_params/</guid>
+      <description>Jupyter notebook
+  </description>
+    </item>
+    
   </channel>
 </rss>

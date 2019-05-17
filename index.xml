@@ -143,5 +143,25 @@
   </description>
     </item>
     
+    <item>
+      <title>Environment</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/01_environment/</link>
+      <pubDate>Tue, 07 May 2019 00:58:20 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/01_environment/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>Training a basic RL - DQN model</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/02_basic_model/</link>
+      <pubDate>Tue, 07 May 2019 00:58:20 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/02_basic_model/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
   </channel>
 </rss>

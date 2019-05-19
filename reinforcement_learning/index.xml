@@ -31,5 +31,15 @@
    </description>
     </item>
     
+    <item>
+      <title>Building a reinforcement learning micro framework</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/03_reinforcement_learning_framework/</link>
+      <pubDate>Sun, 19 May 2019 14:20:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/03_reinforcement_learning_framework/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
   </channel>
 </rss>

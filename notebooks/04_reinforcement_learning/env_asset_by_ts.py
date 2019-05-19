@@ -178,6 +178,16 @@ class AssetTimeSerieEnv(gym.Env):
         )
         return new_status, reward, done, {}
 
+    def get_date(self):
+        '''Return the date of current state. This is not part of Gym interface'''
+
+        return self.current_date
+
+    def get_action_str(self, action):
+        '''Returns a description of a given action. This is nor part of Gym inteface'''
+
+        return self.actions[action]
+
     def _compute_reward(self, next_data):
         if self.position == 0:
             reward = 0

@@ -1,6 +1,6 @@
 ---
 title: "Backtest with 53 inputs and custom policy L1/L2 regularization terms"
-date: 2019-05-19T16:25:00-03:00
+date: 2019-05-26T16:25:00-03:00
 draft: false
 weight: 2090
 ---

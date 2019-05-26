@@ -1,6 +1,6 @@
 ---
 title: "RL DQN model"
-date: 2019-05-19T14:04:00-03:00
+date: 2019-05-26T14:04:00-03:00
 draft: false
 weight: 2040
 ---

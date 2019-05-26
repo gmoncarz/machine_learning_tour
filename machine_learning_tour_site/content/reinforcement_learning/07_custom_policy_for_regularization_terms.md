@@ -1,6 +1,6 @@
 ---
 title: "RL DQN with custom policy for regulartization terms"
-date: 2019-05-19T14:09:00-03:00
+date: 2019-05-26T14:09:00-03:00
 draft: false
 weight: 2070
 ---

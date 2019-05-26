@@ -1,6 +1,6 @@
 ---
 title: "RL Dueling DQN"
-date: 2019-05-19T14:06:00-03:00
+date: 2019-05-26T14:06:00-03:00
 draft: false
 weight: 2050
 ---

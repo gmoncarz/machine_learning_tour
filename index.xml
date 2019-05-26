@@ -173,5 +173,65 @@
    </description>
     </item>
     
+    <item>
+      <title>RL DQN model</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/04_dqn/</link>
+      <pubDate>Sun, 19 May 2019 14:04:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/04_dqn/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>RL Dueling DQN</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/05_dqn_dueling/</link>
+      <pubDate>Sun, 19 May 2019 14:06:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/05_dqn_dueling/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>RL DQN with Prioritized Experience Replay</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/06_dqn_experience_replay/</link>
+      <pubDate>Sun, 19 May 2019 14:06:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/06_dqn_experience_replay/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>RL DQN with custom policy for regulartization terms</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/07_custom_policy_for_regularization_terms/</link>
+      <pubDate>Sun, 19 May 2019 14:09:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/07_custom_policy_for_regularization_terms/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>Backtest with 5 vars (OLHCV quotes) and custom policy L1/L2 regularization terms</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/08_backtest_part_01/08_dqn_backtest_01/</link>
+      <pubDate>Sun, 19 May 2019 14:22:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/08_backtest_part_01/08_dqn_backtest_01/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>Backtest with 53 inputs and custom policy L1/L2 regularization terms</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/08_backtest_part_01/08_dqn_backtest_02/</link>
+      <pubDate>Sun, 19 May 2019 16:25:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/08_backtest_part_01/08_dqn_backtest_02/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
   </channel>
 </rss>

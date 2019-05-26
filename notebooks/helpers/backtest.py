@@ -36,7 +36,7 @@ def train_model_and_backtest_regressor(df, x_vars, y_var,
     if col_date_shift is None:
         col_date_shift = col_date
 
-    periods = pd.date_range(backtest_start, backtest_end, freq='M')
+    periods = pd.date_range(backtest_start, backtest_end, freq=model_update_frequency)
     periods = periods.insert(0, backtest_start)
     periods = periods.insert(periods.shape[-1], backtest_end)
     periods = periods.drop_duplicates()
@@ -123,7 +123,7 @@ def train_model_and_backtest_bool_classifier(df, x_vars, y_var,
     if col_date_shift is None:
         col_date_shift = col_date
 
-    periods = pd.date_range(backtest_start, backtest_end, freq='M')
+    periods = pd.date_range(backtest_start, backtest_end, freq=model_update_frequency)
     periods = periods.insert(0, backtest_start)
     periods = periods.insert(periods.shape[-1], backtest_end)
     periods = periods.drop_duplicates()

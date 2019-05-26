@@ -16,9 +16,11 @@ import logging
 import os
 from dateutil.relativedelta import relativedelta
 import re
+import builtins
 
 import pandas as pd
 from toolz.itertoolz import sliding_window
+from toolz.dicttoolz import get_in
 
 from stable_baselines.common.vec_env import DummyVecEnv
 
@@ -138,6 +140,13 @@ class RLBacktester:
                 logger.debug('Training model from %s to %s', date_train_start.date(),
                              date_train_end.date())
 
+                if self.save_model:
+                    try:
+                        builtins._callback_params['save_model_filename'] = self._get_filename(
+                            period_start, period_end, model_filename_prefix)
+                    except AttributeError:
+                        pass
+
                 model = self.rl_class(env=env_train, **self.rl_params)
                 model.learn(**self.rl_learn_params)
                 if self.save_model:
@@ -229,6 +238,72 @@ class RLBacktester:
 
         return fullpath
 
+
+class RLBacktesterCallbacks:
+    def callback_save_log(_locals, _globals):
+        '''Callback used to save temporary models and log temporary performance
+
+        To use this callback it is expected to have a dict on builtins
+        called _callback_params. The dictionary could have the following keys:
+            - log_each_eps: episodes frequency to log performance
+            - save_each_eps: episodes frequency to save the model temporary
+        '''
+        logger = logging.getLogger(__name__+ '.callback')
+
+        try:
+            _callback_params = builtins._callback_params
+        except AttributeError:
+            _callback_params = {}
+
+        try:
+            num_episodes = _locals['num_episodes']
+        except KeyError:
+            _callback_params['_global_last_episode'] = -1
+            return
+
+        log_each_eps = get_in(['log_each_eps'], _callback_params)
+        save_each_eps = get_in(['save_each_eps'], _callback_params)
+
+        if get_in(['_global_last_episode'], _callback_params, -1) != num_episodes:
+            _callback_params['_global_last_episode'] = num_episodes
+            new_episode = True
+        else:
+            new_episode = False
+
+
+        if (save_each_eps is not None and new_episode
+                and (num_episodes - 1) % save_each_eps == 0
+                and num_episodes > 1):
+
+            base_filename = get_in(['save_model_filename'], _callback_params)
+            if base_filename:
+                save_model_counter = get_in(['save_model_counter'], _callback_params, 0)
+                save_model_counter += 1
+                _callback_params['save_model_counter'] = save_model_counter
+
+                filename = '%s__%05d_%d' % (
+                    base_filename, save_model_counter, _locals['_'])
+                logger.info('Callback saving %s' % filename)
+                _locals['self'].save(filename)
+                # model.save(filename)
+
+        if (log_each_eps is not None and new_episode
+                and (num_episodes - 1) % log_each_eps == 0
+                and num_episodes > 1):
+
+                mean_100ep_reward = get_in(['mean_100ep_reward'], _locals, 0)
+                rew = get_in(['rew'], _locals, 0)
+
+                texts = ['Callback timesteps: %d' % _locals['_'],
+                         # 'episode_rewards: %s' % _locals['episode_rewards'],
+                         'total_timesteps: %d' % _locals['total_timesteps'],
+                         'comp: %.2f%%' % (_locals['_'] * 100 / _locals['total_timesteps']),
+                         'num_episodes: %d' % num_episodes,
+                         'mean_100ep_reward: %f' % mean_100ep_reward,
+                         # 'rew: %s' % rew,
+                         ]
+                text = ' - '.join(texts)
+                logger.info(text)
 
 if __name__ == '__main__':
     import numpy as np

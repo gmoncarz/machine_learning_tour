@@ -44,7 +44,7 @@
     <item>
       <title>RL DQN model</title>
       <link>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/04_dqn/</link>
-      <pubDate>Sun, 19 May 2019 14:04:00 -0300</pubDate>
+      <pubDate>Sun, 26 May 2019 14:04:00 -0300</pubDate>
       
       <guid>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/04_dqn/</guid>
       <description>Jupyter notebook
@@ -54,7 +54,7 @@
     <item>
       <title>RL Dueling DQN</title>
       <link>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/05_dqn_dueling/</link>
-      <pubDate>Sun, 19 May 2019 14:06:00 -0300</pubDate>
+      <pubDate>Sun, 26 May 2019 14:06:00 -0300</pubDate>
       
       <guid>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/05_dqn_dueling/</guid>
       <description>Jupyter notebook
@@ -64,7 +64,7 @@
     <item>
       <title>RL DQN with Prioritized Experience Replay</title>
       <link>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/06_dqn_experience_replay/</link>
-      <pubDate>Sun, 19 May 2019 14:06:00 -0300</pubDate>
+      <pubDate>Sun, 26 May 2019 14:06:00 -0300</pubDate>
       
       <guid>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/06_dqn_experience_replay/</guid>
       <description>Jupyter notebook
@@ -74,7 +74,7 @@
     <item>
       <title>RL DQN with custom policy for regulartization terms</title>
       <link>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/07_custom_policy_for_regularization_terms/</link>
-      <pubDate>Sun, 19 May 2019 14:09:00 -0300</pubDate>
+      <pubDate>Sun, 26 May 2019 14:09:00 -0300</pubDate>
       
       <guid>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/07_custom_policy_for_regularization_terms/</guid>
       <description>Jupyter notebook

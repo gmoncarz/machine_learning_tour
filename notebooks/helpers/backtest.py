@@ -18,6 +18,7 @@ def train_model_and_backtest_regressor(df, x_vars, y_var,
         col_date='date',
         col_date_shift=None,
         ignore_last_x_training_items=0,
+        reference_price_col='close_adj',
         **kwargs):
 
     logger = logging.getLogger(__name__)
@@ -72,7 +73,7 @@ def train_model_and_backtest_regressor(df, x_vars, y_var,
         model = train_model(df_train, x_vars, y_var, model_class, model_params)
         pred = model.predict(df_test[x_vars])
 
-        go_long = df_test['close_adj'] < pred
+        go_long = df_test[reference_price_col] < pred
         df_trans = pd.DataFrame({
             'date': df_test.date,
             'open_price': df_test[buy_price_col],

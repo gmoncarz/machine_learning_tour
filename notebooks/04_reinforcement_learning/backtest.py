@@ -259,6 +259,7 @@ class RLBacktesterCallbacks:
             num_episodes = _locals['num_episodes']
         except KeyError:
             _callback_params['_global_last_episode'] = -1
+            _callback_params['save_model_counter'] = 0
             return
 
         log_each_eps = get_in(['log_each_eps'], _callback_params)

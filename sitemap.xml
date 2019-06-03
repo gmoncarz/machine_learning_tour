@@ -83,6 +83,41 @@
   </url>
   
   <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/svm/</loc>
+    <lastmod>2019-06-02T22:39:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/svm/regressor/</loc>
+    <lastmod>2019-06-02T22:41:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/svm/regressor/01_svn_regressor/</loc>
+    <lastmod>2019-06-02T22:43:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/svm/regressor/02_svn_regressor_adding_historical_variables/</loc>
+    <lastmod>2019-06-02T22:43:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/svm/regressor/03_data_standardization/</loc>
+    <lastmod>2019-06-02T22:51:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/svm/regressor/04_kernels/</loc>
+    <lastmod>2019-06-02T22:53:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/svm/regressor/05_kernel_param_tunning/</loc>
+    <lastmod>2019-06-02T22:54:00-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/</loc>
     <lastmod>2019-05-17T00:49:03-03:00</lastmod>
   </url>

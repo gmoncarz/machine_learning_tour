@@ -61,5 +61,15 @@
    </description>
     </item>
     
+    <item>
+      <title>SVM Regressor - Historical window lenght</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/svm/regressor/06_data_window_size/</link>
+      <pubDate>Sat, 08 Jun 2019 11:03:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/svm/regressor/06_data_window_size/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
   </channel>
 </rss>

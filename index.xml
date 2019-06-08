@@ -194,6 +194,56 @@
     </item>
     
     <item>
+      <title>SVM Regressor - Historical window lenght</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/svm/regressor/06_data_window_size/</link>
+      <pubDate>Sat, 08 Jun 2019 11:03:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/svm/regressor/06_data_window_size/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>SVM Classifier - Introduction</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/svm/classifier/01_svn_classifier/</link>
+      <pubDate>Sat, 08 Jun 2019 11:16:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/svm/classifier/01_svn_classifier/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>SVM Classifier - Improving the model</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/svm/classifier/02_svn_classifier/</link>
+      <pubDate>Sat, 08 Jun 2019 11:17:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/svm/classifier/02_svn_classifier/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>SVM Classifier - Historical variables and data normalization</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/svm/classifier/03_historical_variables/</link>
+      <pubDate>Sat, 08 Jun 2019 11:17:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/svm/classifier/03_historical_variables/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>SVM Classifier - Kernels</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/svm/classifier/04_kernels/</link>
+      <pubDate>Sat, 08 Jun 2019 11:19:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/svm/classifier/04_kernels/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
       <title>Environment</title>
       <link>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/01_environment/</link>
       <pubDate>Tue, 07 May 2019 00:58:20 -0300</pubDate>

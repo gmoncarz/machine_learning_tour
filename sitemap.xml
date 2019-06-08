@@ -118,6 +118,36 @@
   </url>
   
   <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/svm/regressor/06_data_window_size/</loc>
+    <lastmod>2019-06-08T11:03:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/svm/classifier/</loc>
+    <lastmod>2019-06-08T11:10:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/svm/classifier/01_svn_classifier/</loc>
+    <lastmod>2019-06-08T11:16:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/svm/classifier/02_svn_classifier/</loc>
+    <lastmod>2019-06-08T11:17:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/svm/classifier/03_historical_variables/</loc>
+    <lastmod>2019-06-08T11:17:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/svm/classifier/04_kernels/</loc>
+    <lastmod>2019-06-08T11:19:00-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/</loc>
     <lastmod>2019-05-17T00:49:03-03:00</lastmod>
   </url>

@@ -148,6 +148,41 @@
   </url>
   
   <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/decision_tree/</loc>
+    <lastmod>2019-06-12T00:42:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/decision_tree/regressor/</loc>
+    <lastmod>2019-06-12T00:46:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/decision_tree/regressor/01_decision_tree_regressor/</loc>
+    <lastmod>2019-06-12T00:47:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/decision_tree/regressor/02_decision_tree_regressor_adding_historical_variables/</loc>
+    <lastmod>2019-06-12T00:52:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/decision_tree/regressor/03_decision_tree_training_params/</loc>
+    <lastmod>2019-06-12T00:55:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/decision_tree/regressor/04_decision_tree_data_window_size/</loc>
+    <lastmod>2019-06-12T00:55:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/decision_tree/regressor/05_decision_tree_chart/</loc>
+    <lastmod>2019-06-12T00:59:00-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/</loc>
     <lastmod>2019-05-17T00:49:03-03:00</lastmod>
   </url>

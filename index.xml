@@ -244,6 +244,58 @@
     </item>
     
     <item>
+      <title>Decision Trees - Introduction</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/decision_tree/regressor/01_decision_tree_regressor/</link>
+      <pubDate>Wed, 12 Jun 2019 00:47:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/decision_tree/regressor/01_decision_tree_regressor/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>Decision Trees - Adding historical data</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/decision_tree/regressor/02_decision_tree_regressor_adding_historical_variables/</link>
+      <pubDate>Wed, 12 Jun 2019 00:52:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/decision_tree/regressor/02_decision_tree_regressor_adding_historical_variables/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>Decision Trees - Training parameter tunning</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/decision_tree/regressor/03_decision_tree_training_params/</link>
+      <pubDate>Wed, 12 Jun 2019 00:55:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/decision_tree/regressor/03_decision_tree_training_params/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>Decision Trees - Historical window lenght</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/decision_tree/regressor/04_decision_tree_data_window_size/</link>
+      <pubDate>Wed, 12 Jun 2019 00:55:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/decision_tree/regressor/04_decision_tree_data_window_size/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>Decision Trees - Model visualization</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/decision_tree/regressor/05_decision_tree_chart/</link>
+      <pubDate>Wed, 12 Jun 2019 00:59:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/decision_tree/regressor/05_decision_tree_chart/</guid>
+      <description>Decision Tree chart in PDF
+Decision Tree chart in JPG
+Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
       <title>Environment</title>
       <link>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/01_environment/</link>
       <pubDate>Tue, 07 May 2019 00:58:20 -0300</pubDate>

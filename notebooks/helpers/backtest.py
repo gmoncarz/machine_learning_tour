@@ -70,6 +70,9 @@ def train_model_and_backtest_regressor(df, x_vars, y_var,
             df_test = df[(df.date>=period_start) & (df.date<period_end)]
 
 
+        # df_train = df_train[~df_train[x_vars].isnull()]
+        df_train = df_train[~df_train[x_vars].isnull().any(axis=1)]
+
         model = train_model(df_train, x_vars, y_var, model_class, model_params)
         pred = model.predict(df_test[x_vars])
 

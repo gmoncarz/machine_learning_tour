@@ -41,5 +41,16 @@
    </description>
     </item>
     
+    <item>
+      <title>Random Forest - Historical window lenght</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/random_forest/regressor/04_data_window_size/</link>
+      <pubDate>Fri, 09 Aug 2019 10:45:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/random_forest/regressor/04_data_window_size/</guid>
+      <description>Optimizing the historical window lenght for 1 day horizon prediction.
+Jupyter notebook
+   </description>
+    </item>
+    
   </channel>
 </rss>

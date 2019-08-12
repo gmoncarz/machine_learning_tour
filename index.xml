@@ -326,12 +326,23 @@ Jupyter notebook
     </item>
     
     <item>
-      <title>Random Forest - Historical window lenght</title>
+      <title>Random Forest - Historical window lenght - 1 day horizon period</title>
       <link>https://gmoncarz.github.io/machine_learning_tour/random_forest/regressor/04_data_window_size/</link>
       <pubDate>Fri, 09 Aug 2019 10:45:00 -0300</pubDate>
       
       <guid>https://gmoncarz.github.io/machine_learning_tour/random_forest/regressor/04_data_window_size/</guid>
       <description>Optimizing the historical window lenght for 1 day horizon prediction.
+Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>Random Forest - Historical window lenght - 2 weeks horizon period</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/random_forest/regressor/04_data_window_size_2/</link>
+      <pubDate>Mon, 12 Aug 2019 10:48:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/random_forest/regressor/04_data_window_size_2/</guid>
+      <description>Optimizing the historical window lenght for 2 day horizon prediction.
 Jupyter notebook
    </description>
     </item>

@@ -21,7 +21,7 @@ could be downloaded on Yahoo Finance
 
 ## The Data
 
-For this project, it is used 19 years of daily SPY quotes: from years 2000 to 2018. The raw data consits of six daily fields:
+For this project, it is used 19 years of daily SPY quotes: from years 2000 to 2018. The raw data consits of seven daily fields:
 
  * Date
  * Open
@@ -56,16 +56,35 @@ What this project is **not** for:
    implements them and the user can see the input, the training process, the output and how that output is used to take 
    decisions.
 
-In a few words, this project is focus on Machine Learning and not in earning money.
+
+## Results
+
+Despite the project is focus on Machine Learning and not in earning money, on real life problems it is mandatory to
+adapt the models to find alternatives to produce the expected results. This is also done in this project, and for that reason 
+almost all machine learning models are hardly worked to not only produces profit, also to produce a good trade-off between
+return, maximum drawdown, and small market correlation. Below there is a table with the best models of each machine learning
+algorithm.
+
+
+|Model|CAGR|Max Drawdown|Sharpe|Beta|Benchmark CAGR|
+|:---|:---:|:---:|:---:|:---:|:---:|
+|Linear Regression – Elasticnet|10.72%|-34.43%|0.63|0.13|5.77%|
+|Logistic Regression|9.09%|-28.97%|0.55|0.02|4.95%|
+|SVM regressor|19.67%|-24.12%|1.04|0.13|4.95%|
+|SVM classifier|9.83%|-29.08%|0.59|0.02|4.95%|
+|Decision Trees|19.15%|-26.64%|1.01|0.09|4.95%|
+|Random Forest|16.12%|-34.00%|0.88|0.21|5.05%|
+|GBM|21.57%|-27.00%|1.12|0.21|5.05%|
+
 
 ## Project design
 
 There is one charapter for each machine learning model implemented. Each charapter implements some
-Jupyter Notebooks which shows the implementation code and the output returned. This implies that 
+Jupyter Notebooks which show the implementation code and the output returned. This implies that 
 all users can download the code and run all the models locally on his own computer. The user can
 even modify the code to trade other assets, change  machine learning parameters, and also implement
 new trading strategies, like one which trade multiple assets, forex or cryptocurrencies, or even build and ensemble 
-than combines several machine learning models, to leverage the prediction capabilities. I encourage to all users to download this 
+that combines several machine learning models, to leverage the prediction capabilities. I encourage to all users to download this 
 project and based on the developed code, implements his own strategies. 
 
 ## About the implementation details

@@ -41,5 +41,15 @@
    </description>
     </item>
     
+    <item>
+      <title>GBM - Historical window lenght</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/gbm/regressor/04_decision_tree_data_window_size/</link>
+      <pubDate>Fri, 16 Aug 2019 23:18:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/gbm/regressor/04_decision_tree_data_window_size/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
   </channel>
 </rss>

@@ -3,10 +3,10 @@
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Random Forest Regressor - Adding historical variables - Machine Learning Tour by Gabriel Moncarz</title>
+<title>GBM - Historical window lenght - Machine Learning Tour by Gabriel Moncarz</title>
 <meta name="generator" content="Hugo 0.40.1" />
 <link href="https://gmoncarz.github.io/machine_learning_tourindex.xml" rel="alternate" type="application/rss+xml">
-<link rel="canonical" href="https://gmoncarz.github.io/machine_learning_tour/random_forest/regressor/02_random_forest_regressor_adding_historical_variables/">
+<link rel="canonical" href="https://gmoncarz.github.io/machine_learning_tour/gbm/regressor/04_decision_tree_data_window_size/">
 <link rel="stylesheet" href="https://gmoncarz.github.io/machine_learning_tour/css/theme.min.css">
 <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <link rel="stylesheet" href="https://gmoncarz.github.io/machine_learning_tour/css/chroma.min.css">
@@ -38,20 +38,20 @@
 </nav>
 </div>
 <div class="content-container">
-<main><h1>Random Forest Regressor - Adding historical variables</h1><p><a href="https://nbviewer.jupyter.org/github/gmoncarz/machine_learning_tour/blob/master/notebooks/08_random_forest/regressor/02_random_forest_regressor_adding_historical_variables.ipynb">Jupyter notebook</a></p>
+<main><h1>GBM - Historical window lenght</h1><p><a href="https://nbviewer.jupyter.org/github/gmoncarz/machine_learning_tour/blob/master/notebooks/09_gbm/regressor/04_gbm_data_window_size.ipynb">Jupyter notebook</a></p>
 
 <div> 
-    <object type="text/html" width="100%" height="1000" data="https://nbviewer.jupyter.org/github/gmoncarz/machine_learning_tour/blob/master/notebooks/08_random_forest/regressor/02_random_forest_regressor_adding_historical_variables.ipynb">
+    <object type="text/html" width="100%" height="1000" data="https://nbviewer.jupyter.org/github/gmoncarz/machine_learning_tour/blob/master/notebooks/09_gbm/regressor/04_gbm_data_window_size.ipynb">
     </object>
 </div>
 <div class="edit-meta">
-Last updated on 26 Jun 2019
+Last updated on 16 Aug 2019
 
 
 <br>
-Published on 26 Jun 2019
-<br><a href="https://github.com/gmoncarz/machine_learning_tour/edit/master/content/random_forest/regressor/02_random_forest_regressor_adding_historical_variables.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="/machine_learning_tour/random_forest/regressor/01_random_forest_regressor/" title="Random Forest Regressor - Introduction"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Random Forest Regressor - Introduction</a>
-<a class="nav nav-next" href="/machine_learning_tour/random_forest/regressor/03_decision_tree_training_params/" title="Random Forest - Training parameter tunning">Next - Random Forest - Training parameter tunning <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+Published on 16 Aug 2019
+<br><a href="https://github.com/gmoncarz/machine_learning_tour/edit/master/content/gbm/regressor/04_decision_tree_data_window_size.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="/machine_learning_tour/gbm/regressor/03_gbm_training_params/" title="GBM - Training parameter tunning"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - GBM - Training parameter tunning</a>
+<a class="nav nav-next" href="/machine_learning_tour/reinforcement_learning/" title="Reinforcement Learning">Next - Reinforcement Learning <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
 </main><div class="sidebar">
@@ -132,13 +132,13 @@ Published on 26 Jun 2019
   
 </li>
 
-<li class="parent"><a href="/machine_learning_tour/random_forest/">Random Forest</a>
-<ul class="sub-menu">
+<li class=""><a href="/machine_learning_tour/random_forest/">Random Forest</a>
+<ul class="">
 
-<li class="parent"><a href="/machine_learning_tour/random_forest/regressor/">Random Forest Regressor</a>
-<ul class="sub-menu">
+<li class=""><a href="/machine_learning_tour/random_forest/regressor/">Random Forest Regressor</a>
+<ul class="">
 <li class=""><a href="/machine_learning_tour/random_forest/regressor/01_random_forest_regressor/">Random Forest Regressor - Introduction</a></li>
-<li class="active"><a href="/machine_learning_tour/random_forest/regressor/02_random_forest_regressor_adding_historical_variables/">Random Forest Regressor - Adding historical variables</a></li>
+<li class=""><a href="/machine_learning_tour/random_forest/regressor/02_random_forest_regressor_adding_historical_variables/">Random Forest Regressor - Adding historical variables</a></li>
 <li class=""><a href="/machine_learning_tour/random_forest/regressor/03_decision_tree_training_params/">Random Forest - Training parameter tunning</a></li>
 <li class=""><a href="/machine_learning_tour/random_forest/regressor/04_data_window_size/">Random Forest - Historical window lenght - 1 day horizon period</a></li>
 <li class=""><a href="/machine_learning_tour/random_forest/regressor/04_data_window_size_2/">Random Forest - Historical window lenght - 2 weeks horizon period</a></li>
@@ -149,15 +149,15 @@ Published on 26 Jun 2019
   
 </li>
 
-<li class=""><a href="/machine_learning_tour/gbm/">Gradient Boosting Machines - GBM</a>
-<ul class="">
+<li class="parent"><a href="/machine_learning_tour/gbm/">Gradient Boosting Machines - GBM</a>
+<ul class="sub-menu">
 
-<li class=""><a href="/machine_learning_tour/gbm/regressor/">Gradient Boosting Machine Regressor</a>
-<ul class="">
+<li class="parent"><a href="/machine_learning_tour/gbm/regressor/">Gradient Boosting Machine Regressor</a>
+<ul class="sub-menu">
 <li class=""><a href="/machine_learning_tour/gbm/regressor/01_gbm_regressor/">GBM Regressor - Introduction</a></li>
 <li class=""><a href="/machine_learning_tour/gbm/regressor/02_gbm_regressor_adding_historical_variables/">GBM Regressor - Adding historical variables</a></li>
 <li class=""><a href="/machine_learning_tour/gbm/regressor/03_gbm_training_params/">GBM - Training parameter tunning</a></li>
-<li class=""><a href="/machine_learning_tour/gbm/regressor/04_decision_tree_data_window_size/">GBM - Historical window lenght</a></li>
+<li class="active"><a href="/machine_learning_tour/gbm/regressor/04_decision_tree_data_window_size/">GBM - Historical window lenght</a></li>
 </ul>
   
 </li>

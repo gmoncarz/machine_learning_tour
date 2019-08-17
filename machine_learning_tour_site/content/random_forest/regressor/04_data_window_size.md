@@ -1,5 +1,5 @@
 ---
-title: "Random Forest - Historical window lenght"
+title: "Random Forest - Historical window lenght - 1 day horizon period"
 date: 2019-08-09T10:45:00-03:00
 draft: false
 weight: 750

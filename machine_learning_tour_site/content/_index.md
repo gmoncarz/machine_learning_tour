@@ -62,8 +62,8 @@ What this project is **not** for:
 Despite the project is focus on Machine Learning and not in earning money, on real life problems it is mandatory to
 adapt the models to find alternatives to produce the expected results. This is also done in this project, and for that reason 
 almost all machine learning models are hardly worked to not only produces profit, also to produce a good trade-off between
-return, maximum drawdown, and small market correlation. Below there is a table with the best models of each machine learning
-algorithm.
+return, maximum drawdown, and small market correlation. Below there is a table with an advance of the best models produced
+on each machine learning algorithm of this project.
 
 
 |Model|CAGR|Max Drawdown|Sharpe|Beta|Benchmark CAGR|

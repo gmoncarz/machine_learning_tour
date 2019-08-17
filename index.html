@@ -26,7 +26,7 @@
 <div class="container"><header>
 <h1>Machine Learning Tour by Gabriel Moncarz</h1>
 
- <span class="version">Version 1.0.0</span>
+ <span class="version">Version 1.0.1</span>
 <a href="https://github.com/gmoncarz/machine_learning_tour" class="github"><i class="fab fa-github"></i></a>
 </header>
 <div class="menu">
@@ -59,7 +59,7 @@ could be downloaded on Yahoo Finance</p>
 
 <h2 id="the-data">The Data</h2>
 
-<p>For this project, it is used 19 years of daily SPY quotes: from years 2000 to 2018. The raw data consits of six daily fields:</p>
+<p>For this project, it is used 19 years of daily SPY quotes: from years 2000 to 2018. The raw data consits of seven daily fields:</p>
 
 <ul>
 <li>Date</li>
@@ -99,16 +99,100 @@ implements them and the user can see the input, the training process, the output
 decisions.</li>
 </ul>
 
-<p>In a few words, this project is focus on Machine Learning and not in earning money.</p>
+<h2 id="results">Results</h2>
+
+<p>Despite the project is focus on Machine Learning and not in earning money, on real life problems it is mandatory to
+adapt the models to find alternatives to produce the expected results. This is also done in this project, and for that reason
+almost all machine learning models are hardly worked to not only produces profit, also to produce a good trade-off between
+return, maximum drawdown, and small market correlation. Below there is a table with the best models of each machine learning
+algorithm.</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Model</th>
+<th align="center">CAGR</th>
+<th align="center">Max Drawdown</th>
+<th align="center">Sharpe</th>
+<th align="center">Beta</th>
+<th align="center">Benchmark CAGR</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">Linear Regression – Elasticnet</td>
+<td align="center">10.72%</td>
+<td align="center">-34.43%</td>
+<td align="center">0.63</td>
+<td align="center">0.13</td>
+<td align="center">5.77%</td>
+</tr>
+
+<tr>
+<td align="left">Logistic Regression</td>
+<td align="center">9.09%</td>
+<td align="center">-28.97%</td>
+<td align="center">0.55</td>
+<td align="center">0.02</td>
+<td align="center">4.95%</td>
+</tr>
+
+<tr>
+<td align="left">SVM regressor</td>
+<td align="center">19.67%</td>
+<td align="center">-24.12%</td>
+<td align="center">1.04</td>
+<td align="center">0.13</td>
+<td align="center">4.95%</td>
+</tr>
+
+<tr>
+<td align="left">SVM classifier</td>
+<td align="center">9.83%</td>
+<td align="center">-29.08%</td>
+<td align="center">0.59</td>
+<td align="center">0.02</td>
+<td align="center">4.95%</td>
+</tr>
+
+<tr>
+<td align="left">Decision Trees</td>
+<td align="center">19.15%</td>
+<td align="center">-26.64%</td>
+<td align="center">1.01</td>
+<td align="center">0.09</td>
+<td align="center">4.95%</td>
+</tr>
+
+<tr>
+<td align="left">Random Forest</td>
+<td align="center">16.12%</td>
+<td align="center">-34.00%</td>
+<td align="center">0.88</td>
+<td align="center">0.21</td>
+<td align="center">5.05%</td>
+</tr>
+
+<tr>
+<td align="left">GBM</td>
+<td align="center">21.57%</td>
+<td align="center">-27.00%</td>
+<td align="center">1.12</td>
+<td align="center">0.21</td>
+<td align="center">5.05%</td>
+</tr>
+</tbody>
+</table>
 
 <h2 id="project-design">Project design</h2>
 
 <p>There is one charapter for each machine learning model implemented. Each charapter implements some
-Jupyter Notebooks which shows the implementation code and the output returned. This implies that
+Jupyter Notebooks which show the implementation code and the output returned. This implies that
 all users can download the code and run all the models locally on his own computer. The user can
 even modify the code to trade other assets, change  machine learning parameters, and also implement
 new trading strategies, like one which trade multiple assets, forex or cryptocurrencies, or even build and ensemble
-than combines several machine learning models, to leverage the prediction capabilities. I encourage to all users to download this
+that combines several machine learning models, to leverage the prediction capabilities. I encourage to all users to download this
 project and based on the developed code, implements his own strategies.</p>
 
 <h2 id="about-the-implementation-details">About the implementation details</h2>

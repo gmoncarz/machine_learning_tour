@@ -8,6 +8,22 @@ def train_model(df_train, x_vars, y_var, model_class, model_params):
     return model
 
 
+def train_tensorflow_model(df_train, x_vars, y_var, model_class, model_params,
+                           compile_params={}, fit_params={}):
+    model = model_class(**model_params)
+
+    if compile_params:
+        model.compile(**compile_params)
+
+    model.fit(
+        df_train[x_vars].values,
+        df_train[y_var].values.reshape([-1, 1]),
+        **fit_params,
+    )
+
+    return model
+
+
 def get_trailing_df(df, ref_date, delta_time, date_col='date', date_shift_col=None):
     ref_date = pd.to_datetime(ref_date)
 

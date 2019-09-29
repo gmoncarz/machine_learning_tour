@@ -99,7 +99,7 @@ def train_model_and_backtest_regressor(df, x_vars, y_var,
 
 def train_tensorflow_model_and_backtest_regressor(df, x_vars, y_var,
         buy_price_col, sell_price_col,
-        model_class, model_params,
+        model_class, model_params={},
         backtest_start=None, backtest_end=None,
         model_update_frequency='M',
         train_history_period=relativedelta(months=1),
@@ -107,9 +107,9 @@ def train_tensorflow_model_and_backtest_regressor(df, x_vars, y_var,
         col_date_shift=None,
         ignore_last_x_training_items=0,
         reference_price_col='close_adj',
-        compile_kwargs={},
         fit_kwargs={},
         seed=None,
+        tf_config=None,
         **kwargs):
 
     logger = logging.getLogger(__name__)
@@ -163,15 +163,31 @@ def train_tensorflow_model_and_backtest_regressor(df, x_vars, y_var,
         # df_train = df_train[~df_train[x_vars].isnull()]
         df_train = df_train[~df_train[x_vars].isnull().any(axis=1)]
 
-        if seed:
-            tf.random.set_random_seed(seed)
-            np.random.seed(seed)
+        # tf.compat.v1.reset_default_graph()
+        tf.keras.backend.clear_session()
+        graph = tf.Graph()
 
-        # import ipdb; ipdb.set_trace()
-        model = train_tensorflow_model(df_train, x_vars, y_var, model_class,
-                                       model_params, compile_kwargs, fit_kwargs)
-        pred = model.predict(df_test[x_vars])
-        pred = pd.Series(pred.reshape([-1]), index=df_test.index)
+        session = tf.Session(config=tf_config, graph=graph)
+        tf.keras.backend.set_session(session)
+
+        with session.as_default():
+            with session.graph.as_default():
+
+                if seed:
+                    tf.random.set_random_seed(seed)
+                    np.random.seed(seed)
+
+                model = train_tensorflow_model(
+                    df_train,
+                    x_vars,
+                    y_var,
+                    model_class=model_class,
+                    model_params=model_params,
+                    fit_params=fit_kwargs,
+                )
+
+                pred = model.predict(df_test[x_vars])
+                pred = pd.Series(pred.reshape([-1]), index=df_test.index)
 
         go_long = df_test[reference_price_col] < pred
         df_trans = pd.DataFrame({

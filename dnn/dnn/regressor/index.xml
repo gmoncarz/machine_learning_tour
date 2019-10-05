@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Neural Networks (DNN) Regressor on Machine Learning Tour by Gabriel Moncarz</title>
+    <link>https://gmoncarz.github.io/machine_learning_tour/dnn/dnn/regressor/</link>
+    <description>Recent content in Deep Neural Networks (DNN) Regressor on Machine Learning Tour by Gabriel Moncarz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Oct 2019 18:45:00 -0300</lastBuildDate>
+    
+	<atom:link href="https://gmoncarz.github.io/machine_learning_tour/dnn/dnn/regressor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DNN Regressor - Deep Neural Network Template</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/dnn/regressor/01_template/</link>
+      <pubDate>Sat, 05 Oct 2019 18:52:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/dnn/regressor/01_template/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>DNN Regressor - Basic DNN model</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/dnn/regressor/02_basic_nn_regressor/</link>
+      <pubDate>Sat, 05 Oct 2019 19:02:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/dnn/regressor/02_basic_nn_regressor/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>DNN Regressor - Data standardization, normalization and loss optimizers</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/dnn/regressor/03_dnn_normalization_loss_optimizer/</link>
+      <pubDate>Sat, 05 Oct 2019 19:05:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/dnn/regressor/03_dnn_normalization_loss_optimizer/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>DNN Regressor - Regularization terms and batch normalization</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/dnn/regressor/04_regularizer_batch_norm/</link>
+      <pubDate>Sat, 05 Oct 2019 19:17:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/dnn/regressor/04_regularizer_batch_norm/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+  </channel>
+</rss>

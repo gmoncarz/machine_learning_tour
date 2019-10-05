@@ -248,6 +248,41 @@
   </url>
   
   <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/dnn/</loc>
+    <lastmod>2019-10-05T18:31:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/dnn/dnn/</loc>
+    <lastmod>2019-10-05T18:39:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/dnn/dnn/regressor/</loc>
+    <lastmod>2019-10-05T18:45:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/dnn/dnn/regressor/01_template/</loc>
+    <lastmod>2019-10-05T18:52:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/dnn/dnn/regressor/02_basic_nn_regressor/</loc>
+    <lastmod>2019-10-05T19:02:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/dnn/dnn/regressor/03_dnn_normalization_loss_optimizer/</loc>
+    <lastmod>2019-10-05T19:05:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gmoncarz.github.io/machine_learning_tour/dnn/dnn/regressor/04_regularizer_batch_norm/</loc>
+    <lastmod>2019-10-05T19:17:00-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/</loc>
     <lastmod>2019-05-17T00:49:03-03:00</lastmod>
   </url>

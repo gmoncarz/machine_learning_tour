@@ -23,6 +23,16 @@ def train_tensorflow_model(df_train, x_vars, y_var,
     return model
 
 
+def train_sequential_tensorflow_model(mat_x, mat_y, model_class,
+        model_params={}, fit_params={}):
+
+    model = model_class(**model_params)
+
+    model.fit(mat_x, mat_y, **fit_params,)
+
+    return model
+
+
 def get_trailing_df(df, ref_date, delta_time, date_col='date', date_shift_col=None):
     ref_date = pd.to_datetime(ref_date)
 

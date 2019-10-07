@@ -214,29 +214,16 @@ def train_tensorflow_model_and_backtest_regressor(df, x_vars, y_var,
     return df_all_trans
 
 
-def _get_sequential_timeseries(df, x_vars, y_vars, time_steps):
-    # dim_0 = df.shape[0] - time_steps
-    # dim_1 = len(x_vars)
+def _build_sequential_timeseries(df, x_vars, y_vars, time_steps):
+    dim_batch = df.shape[0]
+    dim_features = len(x_vars)
 
-    # mat_x = np.zeros((dim_0, time_steps, dim_1))
-    # mat_y = np.zeros((dim_0,))
+    mat_x = np.full((dim_batch, time_steps, dim_features), np.nan)
+    mat_y = np.full((dim_batch,), np.nan)
 
-    # for i in range(dim_0):
-    #     mat_x[i] = df[x_vars].values[i:time_steps + i]
-    #     mat_y[i] = df[y_vars].values[time_steps + i - 1]
-
-    # return mat_x, mat_y
-
-    dim_0 = df.shape[0]
-    dim_1 = len(x_vars)
-
-    mat_x = np.full((dim_0, time_steps, dim_1), np.nan)
-    mat_y = np.full((dim_0,), np.nan)
-
-    for i in range(time_steps-1, dim_0):
-        # print(i)
-        mat_x[i] = df[x_vars].values[i-time_steps+1:i+1]
-        mat_y[i] = df[y_vars].values[i]
+    for index in range(time_steps-1, dim_batch):
+        mat_x[index] = df[x_vars].values[index-time_steps+1:index+1]
+        mat_y[index] = df[y_vars].values[index]
 
     return mat_x, mat_y
 
@@ -245,7 +232,6 @@ def train_tensorflow_sequencial_model_and_backtest_regressor(
         df,
         x_vars,
         y_var,
-        batch_size,
         time_steps,
         buy_price_col,
         sell_price_col,
@@ -284,9 +270,13 @@ def train_tensorflow_sequencial_model_and_backtest_regressor(
     periods = periods.drop_duplicates()
 
     logger.debug('%d periods to backtest: %s.', len(periods), list(map(str, periods.date)))
-    pass
 
-    mat_full_x, mat_full_y = _get_sequential_timeseries(df, x_vars, y_var, time_steps)
+    # Build the sequantial timeserie.
+    # Note: Doing this here is not the most memory-efficient, but it is CPU
+    # efficient, because all the sequence is computed once. For this problem,
+    # memory is not an issue.
+    mat_full_x, mat_full_y = _build_sequential_timeseries(
+        df, x_vars, y_var, time_steps)
 
     backtest_trans_list = []
     for period_start, period_end in sliding_window(2, periods):
@@ -312,11 +302,13 @@ def train_tensorflow_sequencial_model_and_backtest_regressor(
         else:
             df_test = df[(df.date>=period_start) & (df.date<period_end)]
 
+        # Locate the numpy training index
         index_train_from = df.index.get_loc(df_train.index[0])
         index_train_to = df.index.get_loc(df_train.index[-1])
         index_test_from = df.index.get_loc(df_test.index[0])
         index_test_to = df.index.get_loc(df_test.index[-1])
 
+        # Build the final train and test array
         train_x = mat_full_x[index_train_from:index_train_to+1]
         train_y = mat_full_y[index_train_from:index_train_to+1]
 
@@ -325,20 +317,6 @@ def train_tensorflow_sequencial_model_and_backtest_regressor(
 
         # # df_train = df_train[~df_train[x_vars].isnull()]
         # df_train = df_train[~df_train[x_vars].isnull().any(axis=1)]
-
-        # train_x, train_y = _get_sequential_timeseries(
-        #     df_train,
-        #     x_vars,
-        #     y_var,
-        #     time_steps,
-        # )
-
-        # test_x, test_y = _get_sequential_timeseries(
-        #     df_test,
-        #     x_vars,
-        #     y_var,
-        #     time_steps,
-        # )
 
         # tf.compat.v1.reset_default_graph()
         tf.keras.backend.clear_session()

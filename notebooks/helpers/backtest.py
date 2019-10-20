@@ -246,6 +246,7 @@ def train_tensorflow_sequencial_model_and_backtest_regressor(
         fit_kwargs={},
         seed=None,
         tf_config=None,
+        with_summary=False,
         **kwargs):
 
     logger = logging.getLogger(__name__)
@@ -339,6 +340,9 @@ def train_tensorflow_sequencial_model_and_backtest_regressor(
                     model_params=model_params,
                     fit_params=fit_kwargs,
                 )
+
+                if with_summary:
+                    logging.debug(model.summary())
 
                 pred = model.predict(test_x)
                 pred = pd.Series(pred.reshape([-1]), index=df_test.index)

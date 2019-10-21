@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>CNN &#43; RNN &#43; CNN</title>
+      <title>CNN &#43; RNN &#43; DNN</title>
       <link>https://gmoncarz.github.io/machine_learning_tour/dnn/cnn&#43;rnn&#43;dnn/regressor/01_cnn&#43;rnn&#43;dnn/</link>
       <pubDate>Mon, 21 Oct 2019 00:46:00 -0300</pubDate>
       
@@ -22,7 +22,7 @@
     </item>
     
     <item>
-      <title>CNN &#43; LSTM &#43; CNN</title>
+      <title>CNN &#43; LSTM &#43; DNN</title>
       <link>https://gmoncarz.github.io/machine_learning_tour/dnn/cnn&#43;rnn&#43;dnn/regressor/02_cnn&#43;lstm&#43;dnn/</link>
       <pubDate>Mon, 21 Oct 2019 01:06:00 -0300</pubDate>
       

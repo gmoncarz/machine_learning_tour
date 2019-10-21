@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LSTM Regressor on Machine Learning Tour by Gabriel Moncarz</title>
+    <link>https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/regressor/</link>
+    <description>Recent content in LSTM Regressor on Machine Learning Tour by Gabriel Moncarz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Oct 2019 00:02:00 -0300</lastBuildDate>
+    
+	<atom:link href="https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/regressor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LSTM Regressor - LSTM Introduction</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/regressor/01_lstm_intro/</link>
+      <pubDate>Mon, 21 Oct 2019 00:24:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/regressor/01_lstm_intro/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>LSTM Regressor - Deep LSTM (D-LSTM)</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/regressor/02_dlstm/</link>
+      <pubDate>Mon, 21 Oct 2019 00:27:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/regressor/02_dlstm/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>LSTM Regressor - Deep Secuential LSTM (DS-LSTM)</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/regressor/03_dslstm/</link>
+      <pubDate>Mon, 21 Oct 2019 00:28:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/regressor/03_dslstm/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>LSTM Regressor - Deep Secuential Bidirectional LSTM (DSB-LSTM)</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/regressor/04_dsblstm/</link>
+      <pubDate>Mon, 21 Oct 2019 00:28:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/regressor/04_dsblstm/</guid>
+      <description>Jupyter notebook
+  /div&amp;gt;</description>
+    </item>
+    
+  </channel>
+</rss>

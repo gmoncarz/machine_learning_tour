@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Recurrent Neural Networks (RNN) Regressor on Machine Learning Tour by Gabriel Moncarz</title>
+    <link>https://gmoncarz.github.io/machine_learning_tour/dnn/rnn/regressor/</link>
+    <description>Recent content in Deep Recurrent Neural Networks (RNN) Regressor on Machine Learning Tour by Gabriel Moncarz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Oct 2019 00:02:00 -0300</lastBuildDate>
+    
+	<atom:link href="https://gmoncarz.github.io/machine_learning_tour/dnn/rnn/regressor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RNN Regressor - Introduction</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/rnn/regressor/01_rnn_intro/</link>
+      <pubDate>Mon, 21 Oct 2019 00:12:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/rnn/regressor/01_rnn_intro/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>RNN Regressor - Deep RNN (DRNN)</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/rnn/regressor/02_drnn/</link>
+      <pubDate>Mon, 21 Oct 2019 00:16:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/rnn/regressor/02_drnn/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>RNN Regressor - Deep Secuential RNN (DSRNN)</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/rnn/regressor/03_dsrnn/</link>
+      <pubDate>Mon, 21 Oct 2019 00:18:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/rnn/regressor/03_dsrnn/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>RNN Regressor - Deep Secuential Bidirectional RNN (DSBRNN)</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/rnn/regressor/04_dsbrnn/</link>
+      <pubDate>Mon, 21 Oct 2019 00:18:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/rnn/regressor/04_dsbrnn/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+  </channel>
+</rss>

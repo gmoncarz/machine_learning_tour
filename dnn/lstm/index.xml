@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Long Short Term Memory Neural Networks (LSTM) on Machine Learning Tour by Gabriel Moncarz</title>
+    <link>https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/</link>
+    <description>Recent content in Long Short Term Memory Neural Networks (LSTM) on Machine Learning Tour by Gabriel Moncarz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Oct 2019 23:59:00 -0300</lastBuildDate>
+    
+	<atom:link href="https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

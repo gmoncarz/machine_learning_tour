@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Long Short Term Memory Neural Networks (LSTM) - Machine Learning Tour by Gabriel Moncarz</title>
+<meta name="generator" content="Hugo 0.40.1" />
+<link href="https://gmoncarz.github.io/machine_learning_tourindex.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/">
+<link rel="stylesheet" href="https://gmoncarz.github.io/machine_learning_tour/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://gmoncarz.github.io/machine_learning_tour/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://gmoncarz.github.io/machine_learning_tour/js/functions.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://gmoncarz.github.io/machine_learning_tour/js/jquery.backtothetop/jquery.backtothetop.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139733906-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-139733906-1');
+</script>
+</head>
+<body>
+<div class="container"><header>
+<h1>Machine Learning Tour by Gabriel Moncarz</h1>
+
+ <span class="version">Version 1.1.0</span>
+<a href="https://github.com/gmoncarz/machine_learning_tour" class="github"><i class="fab fa-github"></i></a>
+</header>
+<div class="menu">
+<nav>
+<ul>
+<li><a href="/machine_learning_tour/">ML Tour</a></li>
+<li><a href="https://www.linkedin.com/in/gabriel-moncarz-736a202/">LinkedIn</a></li>
+<li><a href="mailto:gabriel.moncarz@gmail.com">Mail</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>Long Short Term Memory Neural Networks (LSTM)</h1><p><a href="https://en.wikipedia.org/wiki/Long_short-term_memory">Long Short Term Memory (LSTM)</a>.</p>
+<div class="edit-meta">
+Last updated on 20 Oct 2019
+
+
+<br>
+Published on 20 Oct 2019
+<br><a href="https://github.com/gmoncarz/machine_learning_tour/edit/master/content/dnn/lstm/_index.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="/machine_learning_tour/dnn/rnn/regressor/04_dsbrnn/" title="RNN Regressor - Deep Secuential Bidirectional RNN (DSBRNN)"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - RNN Regressor - Deep Secuential Bidirectional RNN (DSBRNN)</a>
+<a class="nav nav-next" href="/machine_learning_tour/dnn/lstm/regressor/" title="LSTM Regressor">Next - LSTM Regressor <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+<nav>
+<ul>
+<li class=""><a href="https://gmoncarz.github.io/machine_learning_tour">Home</a></li>
+
+<li class=""><a href="/machine_learning_tour/data_preparation/">Data Preparation</a>
+</li>
+
+<li class=""><a href="/machine_learning_tour/linear_regression/">Linear Regression</a>
+<ul class="">
+<li class=""><a href="/machine_learning_tour/linear_regression/01_introduction/">Introduction</a></li>
+<li class=""><a href="/machine_learning_tour/linear_regression/02_look_ahead_bias/">Look Ahead Bias</a></li>
+<li class=""><a href="/machine_learning_tour/linear_regression/03_no_look_ahead_bias/">Avoiding look ahead bias</a></li>
+<li class=""><a href="/machine_learning_tour/linear_regression/04/">Running regression models</a></li>
+<li class=""><a href="/machine_learning_tour/linear_regression/05_adding_historical_variables/">Adding historical variables</a></li>
+<li class=""><a href="/machine_learning_tour/linear_regression/06_regularization/">Ridge, Lasso and ElasticNet</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="/machine_learning_tour/logistic_regression/">Logistic Regression</a>
+<ul class="">
+<li class=""><a href="/machine_learning_tour/logistic_regression/01_introduction/">Introduction</a></li>
+<li class=""><a href="/machine_learning_tour/logistic_regression/02_logisitic_models/">Running logistic models</a></li>
+<li class=""><a href="/machine_learning_tour/logistic_regression/03_adding_historical_variables/">Adding historical variables</a></li>
+<li class=""><a href="/machine_learning_tour/logistic_regression/04_logistic_params_part_1/">Logistic training parameters part I</a></li>
+<li class=""><a href="/machine_learning_tour/logistic_regression/04_logistic_params_part_2/">Logistic training parameters part II</a></li>
+<li class=""><a href="/machine_learning_tour/logistic_regression/04_logistic_params_part_3/">Logistic training parameters part III</a></li>
+<li class=""><a href="/machine_learning_tour/logistic_regression/05_strategy_params/">Strategy parameters</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="/machine_learning_tour/svm/">Support Vector Machines - SVM</a>
+<ul class="">
+
+<li class=""><a href="/machine_learning_tour/svm/regressor/">SVM Regressor</a>
+<ul class="">
+<li class=""><a href="/machine_learning_tour/svm/regressor/01_svn_regressor/">SVM Regressor - Introduction</a></li>
+<li class=""><a href="/machine_learning_tour/svm/regressor/02_svn_regressor_adding_historical_variables/">SVM Regressor - Adding historical variables</a></li>
+<li class=""><a href="/machine_learning_tour/svm/regressor/03_data_standardization/">SVM Regressor - Data Standardization/normalization</a></li>
+<li class=""><a href="/machine_learning_tour/svm/regressor/04_kernels/">SVM Regressor - Kernels</a></li>
+<li class=""><a href="/machine_learning_tour/svm/regressor/05_kernel_param_tunning/">SVM Regressor - Kernel parameters tunning</a></li>
+<li class=""><a href="/machine_learning_tour/svm/regressor/06_data_window_size/">SVM Regressor - Historical window lenght</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="/machine_learning_tour/svm/classifier/">SVM Classifier</a>
+<ul class="">
+<li class=""><a href="/machine_learning_tour/svm/classifier/01_svn_classifier/">SVM Classifier - Introduction</a></li>
+<li class=""><a href="/machine_learning_tour/svm/classifier/02_svn_classifier/">SVM Classifier - Improving the model</a></li>
+<li class=""><a href="/machine_learning_tour/svm/classifier/03_historical_variables/">SVM Classifier - Historical variables and data normalization</a></li>
+<li class=""><a href="/machine_learning_tour/svm/classifier/04_kernels/">SVM Classifier - Kernels</a></li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="/machine_learning_tour/decision_tree/">Decision Trees</a>
+<ul class="">
+
+<li class=""><a href="/machine_learning_tour/decision_tree/regressor/">Decision Tree Regressor</a>
+<ul class="">
+<li class=""><a href="/machine_learning_tour/decision_tree/regressor/01_decision_tree_regressor/">Decision Trees - Introduction</a></li>
+<li class=""><a href="/machine_learning_tour/decision_tree/regressor/02_decision_tree_regressor_adding_historical_variables/">Decision Trees - Adding historical data</a></li>
+<li class=""><a href="/machine_learning_tour/decision_tree/regressor/03_decision_tree_training_params/">Decision Trees - Training parameter tunning</a></li>
+<li class=""><a href="/machine_learning_tour/decision_tree/regressor/04_decision_tree_data_window_size/">Decision Trees - Historical window lenght</a></li>
+<li class=""><a href="/machine_learning_tour/decision_tree/regressor/05_decision_tree_chart/">Decision Trees - Model visualization</a></li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="/machine_learning_tour/random_forest/">Random Forest</a>
+<ul class="">
+
+<li class=""><a href="/machine_learning_tour/random_forest/regressor/">Random Forest Regressor</a>
+<ul class="">
+<li class=""><a href="/machine_learning_tour/random_forest/regressor/01_random_forest_regressor/">Random Forest Regressor - Introduction</a></li>
+<li class=""><a href="/machine_learning_tour/random_forest/regressor/02_random_forest_regressor_adding_historical_variables/">Random Forest Regressor - Adding historical variables</a></li>
+<li class=""><a href="/machine_learning_tour/random_forest/regressor/03_decision_tree_training_params/">Random Forest - Training parameter tunning</a></li>
+<li class=""><a href="/machine_learning_tour/random_forest/regressor/04_data_window_size/">Random Forest - Historical window lenght - 1 day horizon period</a></li>
+<li class=""><a href="/machine_learning_tour/random_forest/regressor/04_data_window_size_2/">Random Forest - Historical window lenght - 2 weeks horizon period</a></li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="/machine_learning_tour/gbm/">Gradient Boosting Machines - GBM</a>
+<ul class="">
+
+<li class=""><a href="/machine_learning_tour/gbm/regressor/">Gradient Boosting Machine Regressor</a>
+<ul class="">
+<li class=""><a href="/machine_learning_tour/gbm/regressor/01_gbm_regressor/">GBM Regressor - Introduction</a></li>
+<li class=""><a href="/machine_learning_tour/gbm/regressor/02_gbm_regressor_adding_historical_variables/">GBM Regressor - Adding historical variables</a></li>
+<li class=""><a href="/machine_learning_tour/gbm/regressor/03_gbm_training_params/">GBM - Training parameter tunning</a></li>
+<li class=""><a href="/machine_learning_tour/gbm/regressor/04_decision_tree_data_window_size/">GBM - Historical window lenght</a></li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class="parent"><a href="/machine_learning_tour/dnn/">Deep Learning</a>
+<ul class="sub-menu">
+
+<li class=""><a href="/machine_learning_tour/dnn/dnn/">Deep Neural Networks (DNN)</a>
+<ul class="">
+
+<li class=""><a href="/machine_learning_tour/dnn/dnn/regressor/">Deep Neural Networks (DNN) Regressor</a>
+<ul class="">
+<li class=""><a href="/machine_learning_tour/dnn/dnn/regressor/01_template/">DNN Regressor - Deep Neural Network Template</a></li>
+<li class=""><a href="/machine_learning_tour/dnn/dnn/regressor/02_basic_nn_regressor/">DNN Regressor - Basic DNN model</a></li>
+<li class=""><a href="/machine_learning_tour/dnn/dnn/regressor/03_dnn_normalization_loss_optimizer/">DNN Regressor - Data standardization, normalization and loss optimizers</a></li>
+<li class=""><a href="/machine_learning_tour/dnn/dnn/regressor/04_regularizer_batch_norm/">DNN Regressor - Regularization terms and batch normalization</a></li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="/machine_learning_tour/dnn/cnn/">Convolutional Neural Network (CNN)</a>
+<ul class="">
+
+<li class=""><a href="/machine_learning_tour/dnn/cnn/regressor/">Deep Convolutional Neural Networks (CNN) Regressor</a>
+<ul class="">
+<li class=""><a href="/machine_learning_tour/dnn/cnn/regressor/01_sequence_template/">CNN Regressor - Sequence Modeling</a></li>
+<li class=""><a href="/machine_learning_tour/dnn/cnn/regressor/02_cnn_model_01/">CNN Regressor Model</a></li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="/machine_learning_tour/dnn/rnn/">Deep Recurrent Neural Network (RNN)</a>
+<ul class="">
+
+<li class=""><a href="/machine_learning_tour/dnn/rnn/regressor/">Deep Recurrent Neural Networks (RNN) Regressor</a>
+<ul class="">
+<li class=""><a href="/machine_learning_tour/dnn/rnn/regressor/01_rnn_intro/">RNN Regressor - Introduction</a></li>
+<li class=""><a href="/machine_learning_tour/dnn/rnn/regressor/02_drnn/">RNN Regressor - Deep RNN (DRNN)</a></li>
+<li class=""><a href="/machine_learning_tour/dnn/rnn/regressor/03_dsrnn/">RNN Regressor - Deep Secuential RNN (DSRNN)</a></li>
+<li class=""><a href="/machine_learning_tour/dnn/rnn/regressor/04_dsbrnn/">RNN Regressor - Deep Secuential Bidirectional RNN (DSBRNN)</a></li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class="parent active"><a href="/machine_learning_tour/dnn/lstm/">Long Short Term Memory Neural Networks (LSTM)</a>
+<ul class="sub-menu">
+
+<li class=""><a href="/machine_learning_tour/dnn/lstm/regressor/">LSTM Regressor</a>
+<ul class="">
+<li class=""><a href="/machine_learning_tour/dnn/lstm/regressor/01_lstm_intro/">LSTM Regressor - LSTM Introduction</a></li>
+<li class=""><a href="/machine_learning_tour/dnn/lstm/regressor/02_dlstm/">LSTM Regressor - Deep LSTM (D-LSTM)</a></li>
+<li class=""><a href="/machine_learning_tour/dnn/lstm/regressor/03_dslstm/">LSTM Regressor - Deep Secuential LSTM (DS-LSTM)</a></li>
+<li class=""><a href="/machine_learning_tour/dnn/lstm/regressor/04_dsblstm/">LSTM Regressor - Deep Secuential Bidirectional LSTM (DSB-LSTM)</a></li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="/machine_learning_tour/dnn/cnn&#43;rnn&#43;dnn/">Deep Convolutional Recurrent Neural Network</a>
+<ul class="">
+
+<li class=""><a href="/machine_learning_tour/dnn/cnn&#43;rnn&#43;dnn/regressor/">Deep Convolutional Recurrent Neural Network Regressor</a>
+<ul class="">
+<li class=""><a href="/machine_learning_tour/dnn/cnn&#43;rnn&#43;dnn/regressor/01_cnn&#43;rnn&#43;dnn/">CNN &#43; RNN &#43; CNN</a></li>
+<li class=""><a href="/machine_learning_tour/dnn/cnn&#43;rnn&#43;dnn/regressor/02_cnn&#43;lstm&#43;dnn/">CNN &#43; LSTM &#43; CNN</a></li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="/machine_learning_tour/reinforcement_learning/">Reinforcement Learning</a>
+<ul class="">
+<li class=""><a href="/machine_learning_tour/reinforcement_learning/01_environment/">Environment</a></li>
+<li class=""><a href="/machine_learning_tour/reinforcement_learning/02_basic_model/">Training a basic RL - DQN model</a></li>
+<li class=""><a href="/machine_learning_tour/reinforcement_learning/03_reinforcement_learning_framework/">Building a reinforcement learning micro framework</a></li>
+<li class=""><a href="/machine_learning_tour/reinforcement_learning/04_dqn/">RL DQN model</a></li>
+<li class=""><a href="/machine_learning_tour/reinforcement_learning/05_dqn_dueling/">RL Dueling DQN</a></li>
+<li class=""><a href="/machine_learning_tour/reinforcement_learning/06_dqn_experience_replay/">RL DQN with Prioritized Experience Replay</a></li>
+<li class=""><a href="/machine_learning_tour/reinforcement_learning/07_custom_policy_for_regularization_terms/">RL DQN with custom policy for regulartization terms</a></li>
+
+<li class=""><a href="/machine_learning_tour/reinforcement_learning/08_backtest_part_01/">DQN based backtests</a>
+<ul class="">
+<li class=""><a href="/machine_learning_tour/reinforcement_learning/08_backtest_part_01/08_dqn_backtest_01/">Backtest with 5 vars (OLHCV quotes) and custom policy L1/L2 regularization terms</a></li>
+<li class=""><a href="/machine_learning_tour/reinforcement_learning/08_backtest_part_01/08_dqn_backtest_02/">Backtest with 53 inputs and custom policy L1/L2 regularization terms</a></li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="/machine_learning_tour/more_models/">More Models</a>
+</li>
+</ul>
+</nav>
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

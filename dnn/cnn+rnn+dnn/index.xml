@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Convolutional Recurrent Neural Network on Machine Learning Tour by Gabriel Moncarz</title>
+    <link>https://gmoncarz.github.io/machine_learning_tour/dnn/cnn&#43;rnn&#43;dnn/</link>
+    <description>Recent content in Deep Convolutional Recurrent Neural Network on Machine Learning Tour by Gabriel Moncarz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Oct 2019 00:44:00 -0300</lastBuildDate>
+    
+	<atom:link href="https://gmoncarz.github.io/machine_learning_tour/dnn/cnn+rnn+dnn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

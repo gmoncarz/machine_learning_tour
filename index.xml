@@ -428,6 +428,126 @@ Jupyter notebook
     </item>
     
     <item>
+      <title>CNN Regressor - Sequence Modeling</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/cnn/regressor/01_sequence_template/</link>
+      <pubDate>Sun, 20 Oct 2019 17:32:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/cnn/regressor/01_sequence_template/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>CNN Regressor Model</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/cnn/regressor/02_cnn_model_01/</link>
+      <pubDate>Sun, 20 Oct 2019 18:02:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/cnn/regressor/02_cnn_model_01/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>RNN Regressor - Introduction</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/rnn/regressor/01_rnn_intro/</link>
+      <pubDate>Mon, 21 Oct 2019 00:12:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/rnn/regressor/01_rnn_intro/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>RNN Regressor - Deep RNN (DRNN)</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/rnn/regressor/02_drnn/</link>
+      <pubDate>Mon, 21 Oct 2019 00:16:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/rnn/regressor/02_drnn/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>RNN Regressor - Deep Secuential RNN (DSRNN)</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/rnn/regressor/03_dsrnn/</link>
+      <pubDate>Mon, 21 Oct 2019 00:18:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/rnn/regressor/03_dsrnn/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>RNN Regressor - Deep Secuential Bidirectional RNN (DSBRNN)</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/rnn/regressor/04_dsbrnn/</link>
+      <pubDate>Mon, 21 Oct 2019 00:18:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/rnn/regressor/04_dsbrnn/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>LSTM Regressor - LSTM Introduction</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/regressor/01_lstm_intro/</link>
+      <pubDate>Mon, 21 Oct 2019 00:24:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/regressor/01_lstm_intro/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>LSTM Regressor - Deep LSTM (D-LSTM)</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/regressor/02_dlstm/</link>
+      <pubDate>Mon, 21 Oct 2019 00:27:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/regressor/02_dlstm/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>LSTM Regressor - Deep Secuential LSTM (DS-LSTM)</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/regressor/03_dslstm/</link>
+      <pubDate>Mon, 21 Oct 2019 00:28:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/regressor/03_dslstm/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>LSTM Regressor - Deep Secuential Bidirectional LSTM (DSB-LSTM)</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/regressor/04_dsblstm/</link>
+      <pubDate>Mon, 21 Oct 2019 00:28:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/lstm/regressor/04_dsblstm/</guid>
+      <description>Jupyter notebook
+  /div&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>CNN &#43; RNN &#43; CNN</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/cnn&#43;rnn&#43;dnn/regressor/01_cnn&#43;rnn&#43;dnn/</link>
+      <pubDate>Mon, 21 Oct 2019 00:46:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/cnn&#43;rnn&#43;dnn/regressor/01_cnn&#43;rnn&#43;dnn/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>CNN &#43; LSTM &#43; CNN</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/cnn&#43;rnn&#43;dnn/regressor/02_cnn&#43;lstm&#43;dnn/</link>
+      <pubDate>Mon, 21 Oct 2019 01:06:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/cnn&#43;rnn&#43;dnn/regressor/02_cnn&#43;lstm&#43;dnn/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
       <title>Environment</title>
       <link>https://gmoncarz.github.io/machine_learning_tour/reinforcement_learning/01_environment/</link>
       <pubDate>Tue, 07 May 2019 00:58:20 -0300</pubDate>

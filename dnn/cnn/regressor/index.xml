@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Convolutional Neural Networks (CNN) Regressor on Machine Learning Tour by Gabriel Moncarz</title>
+    <link>https://gmoncarz.github.io/machine_learning_tour/dnn/cnn/regressor/</link>
+    <description>Recent content in Deep Convolutional Neural Networks (CNN) Regressor on Machine Learning Tour by Gabriel Moncarz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Oct 2019 17:26:00 -0300</lastBuildDate>
+    
+	<atom:link href="https://gmoncarz.github.io/machine_learning_tour/dnn/cnn/regressor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CNN Regressor - Sequence Modeling</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/cnn/regressor/01_sequence_template/</link>
+      <pubDate>Sun, 20 Oct 2019 17:32:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/cnn/regressor/01_sequence_template/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+    <item>
+      <title>CNN Regressor Model</title>
+      <link>https://gmoncarz.github.io/machine_learning_tour/dnn/cnn/regressor/02_cnn_model_01/</link>
+      <pubDate>Sun, 20 Oct 2019 18:02:00 -0300</pubDate>
+      
+      <guid>https://gmoncarz.github.io/machine_learning_tour/dnn/cnn/regressor/02_cnn_model_01/</guid>
+      <description>Jupyter notebook
+   </description>
+    </item>
+    
+  </channel>
+</rss>
